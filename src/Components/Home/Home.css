@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-image: url(../../assets/header_img.png);
+  background-size: cover;
+  height: 710px;
+}
+
+.logo img {
+  width: 130px;
+  height: 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  color: #fff;
+  display: flex;
+  gap: 32px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 19px;
+  font-weight: 600;
+}
+nav ul li:hover {
+  border-bottom: 2px solid#fff;
+}
+.icon {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon .i {
+  font-size: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.text span {
+  margin-left: 56px;
+}
+.texts {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.text h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.text button {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 15px;
+
+  margin-top: 42px;
+  padding: 10px 22px;
+  cursor: pointer;
+}
+
+.text button:hover {
+  background: rgb(32, 95, 190);
+  border: 2px solid rgb(32, 95, 190);
+}
+.btn {
+  display: flex;
+  gap: 25px;
+  margin-left: 23%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 14%;
+  right: 0;
+  transform: translateX(-40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-right: 10%;
+}
+.search input {
+  padding: 10px;
+  width: 265px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.search.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.loginPage {
+  background-color: #fff;
+  width: 300px;
+  height: 520px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10;
+  right: 0;
+  transform: translateX(-180px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.loginPage.active {
+  transform: translateX(0);
+  margin-right: 40px;
+  opacity: 1;
+  visibility: visible;
+}
+.loginPage h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9%;
+}
+.loginPage p {
+  color: rgb(58, 48, 48);
+  margin-top: 15px;
+}
+.loginPage .para {
+  margin-left: 3%;
+}
+.loginPage input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid rgb(169, 154, 154);
+  outline: none;
+  font-size: 15px;
+}
+.loginPage .pa {
+  margin-left: 47%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.loginPage input :placeholder-shown {
+  color: rgb(169, 154, 154);
+}
+.loginPage button {
+  margin-top: 8%;
+  margin-left: -2%;
+  padding: 13px;
+  width: 240px;
+  border-radius: 33px;
+  border: none;
+  background-color: blueviolet;
+  color: #fff;
+  cursor: pointer;
+}
+.loginText {
+  margin-top: 12%;
+  margin-left: 12%;
+}
+
+.loginPage .p {
+  margin-left: 24%;
+  margin-top: 9%;
+  font-size: 12px;
+  color: rgb(80, 69, 69);
+}
+
+.loginPage img {
+  width: 35px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-inline: 5px;
+}
+
+.loginPage .icon-img {
+  margin-left: 70px;
+  margin-top: 8%;
+}
+.menu {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  nav {
+    margin: 0 10%;
+    justify-content: space-between;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(5, 5, 116);
+    height: 100%;
+    padding: 19px;
+    padding-top: 15%;
+    z-index: 100;
+    transition: 0.5s;
+  }
+  nav ul li {
+    font-size: 18px;
+  }
+  nav ul li:hover {
+    border: none;
+  }
+  nav .menu {
+    z-index: 100;
+    cursor: pointer;
+    display: block;
+    transition: 0.5s;
+    font-size: 33px;
+  }
+
+  .hide-mobile-menu {
+    right: -200px;
+  }
+  .text {
+    margin-top: 6%;
+  }
+  .text h1 {
+    font-size: 58px;
+  }
+  .btn {
+    display: flex;
+  }
+  .btn button {
+    width: 115px;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 502px) {
+  .text h1 {
+    font-size: 44px;
+    margin-top: 5%;
+    line-height: 1.4;
+  }
+  .text span {
+    margin-left: 9%;
+  }
+  .btn {
+    margin-left: 19%;
+    margin-top: -2%;
+  }
+  .btn button {
+    width: 95px;
+    padding: 9px;
+    font-size: 14px;
+  }
+}

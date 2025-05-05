@@ -1,0 +1,137 @@
+.card {
+  width: 350px;
+  height: 430px;
+  margin-top: 2%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.card img {
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.card p {
+  font-size: 17px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: rgb(125, 110, 110);
+  margin-left: 14%;
+  line-height: 1.4;
+  margin-right: 14%;
+  font-weight: 600;
+}
+
+.card h1 {
+  font-size: 23px;
+  color: black;
+  font-weight: 540;
+}
+.card .icon {
+  color: rgb(231, 98, 58);
+  font-size: 22px;
+  display: flex;
+  justify-content: center; /* Center the stars horizontally */
+  gap: 5px;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+.testimonial {
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+@media (max-width: 1165px) {
+  .testimonial {
+    flex-direction: row; /* Keep them in a row if not too small */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .card {
+    width: 80%; /* Adjust card width */
+    height: auto;
+    margin: 0 auto; /* Center cards */
+  }
+
+  .card img {
+    width: 120px; /* Adjust image size */
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .card h1 {
+    font-size: 22px; /* Slightly adjust title font size */
+  }
+
+  .card p {
+    font-size: 17px; /* Adjust paragraph font size */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .card .icon {
+    font-size: 21px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+  .card .text {
+    margin-top: 0%;
+  }
+
+  .card img {
+    width: 100px;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .card .icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card p {
+    font-size: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .card .icon {
+    font-size: 18px;
+  }
+}

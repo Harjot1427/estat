@@ -1,0 +1,28 @@
+.head {
+  margin-top: 80px;
+}
+
+.head h1 {
+  font-size: 30px;
+  font-weight: 900;
+  display: flex;
+  gap: 16px;
+}
+.head h1 span {
+  font-weight: 400;
+  border-bottom: 2px solid black;
+}
+.head p {
+  color: rgb(59, 46, 46);
+  margin-top: 1%;
+  line-height: 1.4;
+  margin-left: -8%;
+}
+.head p span {
+  margin-left: 37%;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

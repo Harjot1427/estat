@@ -1,0 +1,174 @@
+footer {
+  background-color: rgb(5, 5, 66);
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-c {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  gap: 20px;
+}
+
+/* Logo and text */
+footer .para {
+  width: 300px;
+}
+
+footer img {
+  width: 120px;
+}
+
+footer .para p {
+  font-size: 17px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Company Links */
+.footer-content h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content li {
+  font-size: 17px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.footer-content li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content li a:hover,
+.footer-content li a:focus {
+  color: rgb(22, 22, 172);
+  outline: none;
+}
+
+/* Newsletter */
+footer .inp {
+  max-width: 300px;
+}
+
+footer .inp h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+footer .inp p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+footer .input {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+footer .inp input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  flex: 1;
+  min-width: 200px;
+}
+
+footer .inp input:focus {
+  outline: 2px solid rgb(22, 22, 172);
+  outline-offset: 2px;
+}
+
+footer .inp button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(22, 22, 172);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer .inp button:hover {
+  background-color: rgb(10, 10, 120);
+  outline: none;
+}
+
+.para p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .footer-c {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 4%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Logo and description */
+  .para {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .para img {
+    position: relative;
+    top: 0;
+    right: 39%;
+  }
+
+  .footer-content {
+    align-items: flex-start;
+    margin: 20px auto;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .footer-content h2 {
+    font-size: 26px;
+  }
+  .footer-c .para {
+    width: 100%; /* Take full available width */
+    font-size: 15px;
+  }
+  footer .input {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  footer .inp .input input {
+    width: 10px;
+  }
+
+  .footer-c .inp h2 {
+    width: 350px;
+    font-size: 26px;
+  }
+  footer .inp button {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
