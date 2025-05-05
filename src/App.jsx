@@ -6,7 +6,7 @@ import Home from "./Components/Home/Home";
 import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
-import Testimonial from "./Components/testimonial/Testimonial";
+import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 
