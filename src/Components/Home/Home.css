@@ -5,7 +5,12 @@
 .container {
   background-image: url(../../assets/header_img.png);
   background-size: cover;
-  height: 710px;
+  height: 740px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 
 .logo img {
@@ -88,11 +93,11 @@ nav ul li:hover {
   position: absolute;
   top: 14%;
   right: 0;
-  transform: translateX(-40px);
+  transform: translateX(-20px);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  margin-right: 10%;
+  margin-right: 0;
 }
 .search input {
   padding: 10px;
@@ -102,7 +107,7 @@ nav ul li:hover {
   outline: none;
   font-size: 17px;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 0;
 }
 .search.active {
   transform: translateX(0);
@@ -111,94 +116,96 @@ nav ul li:hover {
 }
 .loginPage {
   background-color: #fff;
-  width: 300px;
-  height: 520px;
+  width: 240px;
+  max-width: 85vw;
+  height: auto;
+  padding: 25px 20px;
   border-radius: 10px;
   position: absolute;
-  top: 10;
-  right: 0;
-  transform: translateX(-180px);
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  z-index: 1000;
 }
+
 .loginPage.active {
-  transform: translateX(0);
-  margin-right: 40px;
   opacity: 1;
   visibility: visible;
 }
+
 .loginPage h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 9%;
-}
-.loginPage p {
-  color: rgb(58, 48, 48);
-  margin-top: 15px;
-}
-.loginPage .para {
-  margin-left: 3%;
-}
-.loginPage input {
-  padding: 10px;
-  width: 200px;
-  border: none;
-  border-bottom: 2px solid rgb(169, 154, 154);
-  outline: none;
-  font-size: 15px;
-}
-.loginPage .pa {
-  margin-left: 47%;
-  cursor: pointer;
-  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.loginPage input :placeholder-shown {
-  color: rgb(169, 154, 154);
+.loginText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.loginPage button {
-  margin-top: 8%;
-  margin-left: -2%;
-  padding: 13px;
-  width: 240px;
-  border-radius: 33px;
+
+.loginPage .para {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #444;
+}
+
+.loginPage input {
+  padding: 10px;
   border: none;
-  background-color: blueviolet;
-  color: #fff;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.loginPage .pa {
+  font-size: 13px;
+  text-align: right;
+  color: #555;
   cursor: pointer;
 }
-.loginText {
-  margin-top: 12%;
-  margin-left: 12%;
+
+.loginPage button {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .loginPage .p {
-  margin-left: 24%;
-  margin-top: 9%;
-  font-size: 12px;
-  color: rgb(80, 69, 69);
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
 }
 
-.loginPage img {
+.icon-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.icon-img img {
   width: 35px;
-  background-size: cover;
+  height: 35px;
   border-radius: 50%;
-  margin-inline: 5px;
 }
 
-.loginPage .icon-img {
-  margin-left: 70px;
-  margin-top: 8%;
-}
 .menu {
   display: none;
   cursor: pointer;
 }
 @media (max-width: 800px) {
   nav {
-    margin: 0 10%;
+    margin: 0 5%;
     justify-content: space-between;
   }
   nav ul {
@@ -245,24 +252,53 @@ nav ul li:hover {
     padding: 11px 10px;
     font-size: 14px;
   }
+  .loginPage {
+    top: 20%;
+    right: 2%;
+    transform: none;
+  }
 }
 
 @media (max-width: 502px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    padding-top: 24%;
+  }
   .text h1 {
-    font-size: 44px;
-    margin-top: 5%;
+    font-size: 32px;
+    margin-top: 15%;
     line-height: 1.4;
   }
   .text span {
     margin-left: 9%;
   }
   .btn {
-    margin-left: 19%;
+    margin-left: 8%;
     margin-top: -2%;
   }
   .btn button {
     width: 95px;
     padding: 9px;
     font-size: 14px;
+  }
+  .container .icon .i {
+    font-size: 28px;
+  }
+  .container .icon {
+    display: flex;
+    gap: 10px;
+  }
+  .container .icon .menu {
+    font-size: 28px;
+  }
+  .container .icon .s {
+    font-size: 23px;
+  }
+  .loginPage {
+    right: 20px;
+    max-width: 52%;
   }
 }

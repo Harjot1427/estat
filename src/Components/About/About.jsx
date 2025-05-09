@@ -11,28 +11,30 @@ const About = () => {
       <div className="about-right">
         <ul className="status-list">
           <li>
-            <strong>10+</strong>
-            <p className="para">Years of excellence</p>
+            <h2>10+</h2>
+            <ol>Years of excellence</ol>
           </li>
           <li>
-            <strong>20+</strong>
-            <p className="para">Projects Completed</p>
+            <h2>20+</h2>
+            <ol>Projects Completed</ol>
           </li>
           <li>
-            <strong>20+</strong>
-            <p className="para">Mn. Sq. Ft. Delivered</p>
+            <h2>15+</h2>
+            <ol>Mn. Sq. Ft. Delivered</ol>
           </li>
           <li>
-            <strong>25+</strong>
-            <p className="para">Ongoing Projects</p>
+            <h2>25+</h2>
+            <ol>Ongoing Projects</ol>
           </li>
         </ul>
-        <p id="para1">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>{" "}
+        <div className="about-content">
+          <p id="para1">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>{" "}
+        </div>
         <button>Learn more</button>
       </div>
     </div>

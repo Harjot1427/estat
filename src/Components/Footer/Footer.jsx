@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer>
       <ul className="footer-c">
-        {/* Logo and Description */}
         <li className="para">
           <img src={logo} alt="Company Logo" />
           <p>
@@ -15,7 +14,6 @@ const Footer = () => {
           </p>
         </li>
 
-        {/* Company Links */}
         <li>
           <div className="footer-content">
             <h2>Company</h2>
@@ -36,12 +34,16 @@ const Footer = () => {
           </div>
         </li>
 
-        {/* Newsletter */}
         <li className="inp">
-          <h2>Subscribe to our newsletter</h2>
-          <p>
-            The latest news, articles, and resources, sent to your inbox weekly.
-          </p>
+          <h2>
+            Subscribe to our <span>newsletter</span>
+          </h2>
+          <div className="pa">
+            <p>
+              The latest news, articles, and resources, sent to your inbox
+              weekly.
+            </p>
+          </div>
           <div className="input">
             <input type="text" placeholder="Enter your email" />
             <button>Subscribe</button>

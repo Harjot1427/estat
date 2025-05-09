@@ -48,11 +48,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 1%;
   gap: 20px;
 }
 
 .slider ul li {
-  flex: 0 0 calc(25% - 15px); /* each item takes 25% minus portion of gaps */
+  flex: 0 0 calc(25% - 15px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,11 +131,11 @@
 
 @media (max-width: 480px) {
   .slider ul li {
-    flex: 0 0 calc(50% - 10px); /* 2 items per row, reduce space */
+    flex: 0 0 calc(50% - 10px);
   }
 
   .slider ul {
-    gap: 10px; /* Adjust space between items */
+    gap: 10px;
     margin-top: 4%;
   }
 

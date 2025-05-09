@@ -89,7 +89,7 @@ const Home = () => {
           </ul>
 
           <div className="icon">
-            <FaSearch onClick={searchHandler} />
+            <FaSearch onClick={searchHandler} className="s" />
             <IoPersonCircleSharp onClick={loginPage} className="i" />
             {mobileMenu ? (
               <IoCloseSharp onClick={toggleMenu} className="menu" />

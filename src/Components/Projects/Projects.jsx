@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Projects.css";
 import project1 from "../../assets/project_img_1.jpg";
 import project2 from "../../assets/project_img_2.jpg";
@@ -11,25 +11,47 @@ const Projects = () => {
   let tx = useRef(0);
   const slider = useRef();
 
-  // Total number of items
   const totalItems = 6;
-  // Number of items visible in viewport (4 items at 25% width each)
-  const visibleItems = 4;
-  // Maximum negative translateX percentage to show last items
-  const maxTranslateX = -((totalItems - visibleItems) * 25);
+
+  const [visibleItems, setVisibleItems] = useState(4);
+  const [stepSize, setStepSize] = useState(25);
+
+  const maxTranslateX = -((totalItems - visibleItems) * stepSize);
+
+  const updateSliderSettings = () => {
+    const width = window.innerWidth;
+    if (width > 768) {
+      setVisibleItems(4);
+      setStepSize(25);
+    } else if (width > 480) {
+      setVisibleItems(3);
+      setStepSize(33.3333);
+    } else {
+      setVisibleItems(2);
+      setStepSize(50);
+    }
+  };
+
+  useEffect(() => {
+    updateSliderSettings();
+    window.addEventListener("resize", updateSliderSettings);
+    return () => window.removeEventListener("resize", updateSliderSettings);
+  }, []);
 
   const next = () => {
     if (tx.current > maxTranslateX) {
-      tx.current -= 25;
+      tx.current -= stepSize;
       slider.current.style.transform = `translateX(${tx.current}%)`;
     }
   };
+
   const back = () => {
     if (tx.current < 0) {
-      tx.current += 25;
+      tx.current += stepSize;
       slider.current.style.transform = `translateX(${tx.current}%)`;
     }
   };
+
   return (
     <div className="projects">
       <button className="next " onClick={next}>

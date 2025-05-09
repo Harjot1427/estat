@@ -31,7 +31,7 @@
   color: rgb(231, 98, 58);
   font-size: 22px;
   display: flex;
-  justify-content: center; /* Center the stars horizontally */
+  justify-content: center;
   gap: 5px;
   margin-top: 0%;
   margin-bottom: 3%;
@@ -44,10 +44,13 @@
   margin-bottom: 5%;
   margin-top: 3%;
 }
+.card:hover {
+  border: 2px solid rgb(34, 34, 115);
+}
 
 @media (max-width: 1165px) {
   .testimonial {
-    flex-direction: row; /* Keep them in a row if not too small */
+    flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -55,29 +58,29 @@
   }
 
   .card {
-    width: 80%; /* Adjust card width */
+    width: 80%;
     height: auto;
-    margin: 0 auto; /* Center cards */
+    margin: 0 auto;
   }
 
   .card img {
-    width: 120px; /* Adjust image size */
+    width: 120px;
     margin-top: 5%;
     margin-bottom: 2%;
   }
 
   .card h1 {
-    font-size: 22px; /* Slightly adjust title font size */
+    font-size: 22px;
   }
 
   .card p {
-    font-size: 17px; /* Adjust paragraph font size */
+    font-size: 17px;
     margin-left: 10%;
     margin-right: 10%;
   }
 
   .card .icon {
-    font-size: 21px; /* Adjust icon size */
+    font-size: 21px;
   }
 }
 
