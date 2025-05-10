@@ -141,7 +141,7 @@ const Home = () => {
                 </Link>
               </button>
               <button>
-                <Link to="contact" smooth={true} offset={-200} duration={500}>
+                <Link to="contact" smooth={true} offset={-170} duration={500}>
                   Contact us
                 </Link>
               </button>

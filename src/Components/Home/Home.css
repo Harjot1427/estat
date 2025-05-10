@@ -37,8 +37,9 @@ nav ul li {
   list-style: none;
   font-size: 19px;
   font-weight: 600;
+  border-bottom: 2px solid transparent;
 }
-nav ul li:hover {
+nav li:hover {
   border-bottom: 2px solid#fff;
 }
 .icon {
@@ -232,10 +233,10 @@ nav ul li:hover {
   }
   nav ul li {
     font-size: 18px;
+
+    width: fit-content;
   }
-  nav ul li:hover {
-    border: none;
-  }
+
   nav .menu {
     z-index: 100;
     cursor: pointer;
