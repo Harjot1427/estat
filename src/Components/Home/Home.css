@@ -6,7 +6,7 @@
   background-image: url(../../assets/header_img.png);
   background-size: cover;
   background-position: center;
-  height: 740px;
+  height: 710px;
   width: 100%;
   overflow-x: hidden;
   position: relative;
@@ -285,7 +285,7 @@ nav ul li:hover {
     padding-top: 24%;
   }
   .text h1 {
-    font-size: 32px;
+    font-size: 29px;
     margin-top: 15%;
     line-height: 1.4;
   }
@@ -293,13 +293,16 @@ nav ul li:hover {
     margin-left: 9%;
   }
   .btn {
-    margin-left: 8%;
-    margin-top: -2%;
+    position: relative;
+    left: -30px;
+  }
+  .container .logo img {
+    width: 100px;
   }
   .btn button {
-    width: 95px;
+    width: 82px;
     padding: 9px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .container .icon .i {
     font-size: 28px;
@@ -317,5 +320,8 @@ nav ul li:hover {
   .loginPage {
     right: 20px;
     max-width: 52%;
+  }
+  .texts {
+    margin-top: 15%;
   }
 }

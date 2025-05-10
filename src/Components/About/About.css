@@ -198,11 +198,15 @@
 }
 
 @media (max-width: 500px) {
+  .about-left img {
+    width: 290px;
+  }
   .about-right ul.status-list {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     padding: 0 10px;
+    margin-left: -3%;
   }
   .about-right ul.status-list li {
     flex: 1 1 45%;

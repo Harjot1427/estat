@@ -20,7 +20,10 @@ const Home = () => {
   const searchRef = useRef();
 
   const toggleMenu = () => {
-    setMobileMenu((prev) => !prev);
+    setMobileMenu((prev) => {
+      if (!prev) setLogin(false);
+      return !prev;
+    });
   };
 
   const searchHandler = () => {
@@ -33,6 +36,7 @@ const Home = () => {
   const loginPage = () => {
     setLogin((prev) => {
       if (!prev) setSearchActive(false);
+      if (!prev) setMobileMenu(false);
       return !prev;
     });
   };
