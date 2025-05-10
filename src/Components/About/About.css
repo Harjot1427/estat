@@ -13,6 +13,7 @@
   align-items: center;
   margin-bottom: 9%;
   flex-wrap: wrap;
+  margin-top: 8%;
 }
 
 .about-right {
@@ -214,5 +215,9 @@
     margin: 10px 5px;
     text-align: center;
     margin-left: 3%;
+  }
+  .about-right ul {
+    position: relative;
+    left: 10px;
   }
 }
