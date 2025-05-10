@@ -44,9 +44,6 @@
   margin-bottom: 5%;
   margin-top: 3%;
 }
-.card:hover {
-  border: 2px solid rgb(34, 34, 115);
-}
 
 @media (max-width: 1165px) {
   .testimonial {

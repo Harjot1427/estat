@@ -75,6 +75,7 @@
 }
 .about-right button:hover {
   background-color: rgb(20, 70, 140);
+  transition: 0.3s ease;
 }
 .about-content {
   font-size: 17px;
@@ -212,5 +213,6 @@
     flex: 1 1 45%;
     margin: 10px 5px;
     text-align: center;
+    margin-left: 3%;
   }
 }

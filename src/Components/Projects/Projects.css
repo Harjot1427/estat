@@ -149,6 +149,9 @@
     padding: 10px;
     margin-inline: -12px;
   }
+  .slider {
+    margin-left: 2.5%;
+  }
   .info {
     width: 60%;
     position: relative;
