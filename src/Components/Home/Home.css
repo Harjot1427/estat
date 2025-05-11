@@ -295,15 +295,15 @@ nav li:hover {
   }
   .btn {
     position: relative;
-    left: -22px;
+    left: -32px;
   }
   .container .logo img {
     width: 115px;
   }
   .btn button {
-    width: 82px;
+    width: 84px;
     padding: 9px;
-    font-size: 12px;
+    font-size: 13px;
   }
   .container .icon .i {
     font-size: 28px;
