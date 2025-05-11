@@ -6,7 +6,7 @@
   background-image: url(../../assets/header_img.png);
   background-size: cover;
   background-position: center;
-  height: 710px;
+  height: 720px;
   width: 100%;
   overflow-x: hidden;
   position: relative;
@@ -286,7 +286,7 @@ nav li:hover {
     padding-top: 24%;
   }
   .text h1 {
-    font-size: 27px;
+    font-size: 30px;
     margin-top: 15%;
     line-height: 1.4;
   }
@@ -298,7 +298,7 @@ nav li:hover {
     left: -22px;
   }
   .container .logo img {
-    width: 100px;
+    width: 115px;
   }
   .btn button {
     width: 82px;
