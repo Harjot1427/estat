@@ -101,13 +101,13 @@ nav li:hover {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 14%;
+  top: 16%;
   right: 0;
   transform: translateX(-20px);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  margin-right: 0;
+  margin-right: 20px;
 }
 .search input {
   padding: 10px;
@@ -320,7 +320,7 @@ nav li:hover {
   }
   .loginPage {
     right: 20px;
-    max-width: 52%;
+    max-width: 72%;
   }
   .texts {
     margin-top: 15%;
