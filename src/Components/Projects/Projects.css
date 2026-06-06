@@ -29,7 +29,7 @@
 }
 
 .next {
-  right: 2%;
+  right: 1.6%;
 }
 
 .back {
@@ -40,6 +40,8 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+    margin-left: 8px;
+
 }
 
 .slider ul {
@@ -68,7 +70,7 @@
 }
 
 .info {
-  width: 100%;
+  width: 80%;
   background-color: #f6f2f2;
   padding: 10px;
   text-align: center;
@@ -87,15 +89,16 @@
 
   .slider ul li {
     flex: 0 0 calc(33.3333% - 15px); /* 3 items per row with space */
-    margin-left: 1%;
   }
 
   .slider ul {
     margin: auto; /* Center the list */
     gap: 15px; /* Add space between items */
+    margin-top: 10px;
   }
   .slider {
     margin-top: 5%;
+    margin-left: 10px;
   }
 
   .next {
@@ -112,7 +115,7 @@
     font-size: 24px;
     width: 40px;
     padding: 8px;
-    left: 77%;
+    left: 75%;
   }
 
   .info {
@@ -137,8 +140,7 @@
   .slider ul {
     gap: 10px;
     margin-top: 4%;
-    width: 206%;
-    margin-left: -5%;
+    width: 200%;
   }
 
   .next,

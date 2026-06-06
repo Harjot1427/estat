@@ -1,6 +1,6 @@
 .card {
-  width: 350px;
-  height: 430px;
+  width: 300px;
+  height: 400px;
   margin-top: 2%;
   border-radius: 10px;
   text-align: center;
@@ -8,11 +8,11 @@
   cursor: pointer;
 }
 .card img {
-  margin-top: 10%;
+  margin-top: 0%;
   margin-bottom: 3%;
 }
 .card p {
-  font-size: 17px;
+  font-size: 17px; 
   margin-top: 2%;
   margin-bottom: 2%;
   color: rgb(125, 110, 110);
@@ -122,7 +122,7 @@
 @media (max-width: 480px) {
   .card {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 20px;
   }
 
   .card p {

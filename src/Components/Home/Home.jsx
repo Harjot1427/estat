@@ -19,7 +19,7 @@ const Home = () => {
   const lastScrollY = useRef(0);
   const searchRef = useRef();
 
-  const toggleMenu = () => {
+  const toggleMenu = () => { 
     setMobileMenu((prev) => {
       if (!prev) setLogin(false);
       return !prev;
